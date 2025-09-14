@@ -62,11 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (featuredApp) {
             featuredAppEl.innerHTML = `
                 <div class="card bg-white text-center mb-5">
-                    <div class="card-body d-flex justify-content-start">
-                        <div class="col-3">
+                    <div class="card-body row">
+                        <div class="col-sm-12 col-md-3">
                             <img src="${featuredApp.icon_url}" class="w-100" alt="${featuredApp.name} logo">
                         </div>
-                        <div class="col-9 p-3">
+                        <div class="col-sm-12 col-md-9 p-3">
                             <div class="text-start vertical-center">
                                 <h1 class="display-5">${featuredApp.name}</h1>
                                 <p class="lead">${featuredApp.description}</p>
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Render App Grid
         appListGrid.innerHTML = storeData.apps.map(app => `
-            <div class="col">
+            <div class="col mb-3">
                 <a href="#/app/${app.name}" class="text-decoration-none">
                     <div class="card h-100 app-card">
                         <div class="card-body d-flex flex-column">
@@ -106,28 +106,32 @@ document.addEventListener('DOMContentLoaded', () => {
             <div>
                 <a href="#" class="btn btn-light btn-sm mb-4">&larr; Back to All Apps</a>
                 <div class="row bg-white p-4 border border-1 border-light rounded">
-                    <div class="col-md-10">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="col-4 me-4">
+                    <div class="col-sm-12 col-md-10">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 me-4 mb-3">
                                 <img src="${app.icon_url}" class="w-100 rounded me-4" alt="${app.name} icon">
                             </div>
-                            <div>
+                            <div class="col-sm-12 col-md-8">
                                 <h1 class="display-6 mb-1">${app.name}</h1>
                                 <p class="text-muted">By ${app.publisher.name} | Category: ${app.category}</p>
                             </div>
                         </div>
                         <p>${app.long_description}</p>
-                        ${app.website ? `<a href="${app.website}" target="_blank" class="btn btn-secondary">Visit Website</a>` : ''}
+                        <p><strong>Version:</strong> ${app.version}</p>
+                        ${app.license ? `<p><strong>License:</strong> ${app.license}</p>` : ''}
+                        ${app.website ? `<a href="${app.website}" target="_blank" class="btn btn-light border border-1 mt-2 me-2 mb-3">Homepage</a>` : ''}
+                        ${app.download_url ? `<a href="${location.protocol + location.host + '/' + app.download_url}" target="_blank" class="btn btn-light border border-1 mt-2 me-2 mb-3">Download</a>` : ''}
+
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-sm-12 col-md-2">
                         <div class="d-grid gap-2">
-                           <button class="btn btn-primary btn-lg" data-app-name="${app.name}">Install App</button>
+                           <button class="btn btn-primary btn-lg mt-2" data-app-name="${app.name}">Install App</button>
                         </div>
                     </div>
                 </div>
 
                 <h3 class="mt-5 mb-4">Gallery</h3>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 bg-white mt-2">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 bg-white mt-2 mb-4">
                     ${app.gallery.map(item => `
                         <div class="card border-0">
                             <div class="card-body d-flex flex-column">
