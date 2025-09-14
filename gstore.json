@@ -6,6 +6,7 @@
     {
       "name": "Gindoo",
       "version": "1.0.0",
+      "installName": "gindoo",
       "featured": true,
       "category": "Productivity",
       "description": "A task management tool for software scrum teams built on Gingee.",
@@ -24,6 +25,7 @@
     {
       "name": "Gintin",
       "version": "1.0.0",
+      "installName": "gintin",
       "featured": false,
       "category": "Communication",
       "description": "A simple blogging platform built on Gingee.",
@@ -43,6 +45,7 @@
     {
       "name": "Ginzilla",
       "version": "1.0.0",
+      "installName": "ginzilla",
       "featured": false,
       "category": "Tools",
       "description": "A bug tracking system for software development teams built on Gingee. Coming Soon!",
@@ -59,6 +62,7 @@
     {
       "name": "GinTest",
       "version": "1.0.0",
+      "installName": "tests",
       "featured": false,
       "category": "Tools",
       "description": "The test runner for Gingee module APIs",

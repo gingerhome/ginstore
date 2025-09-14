@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="col-sm-12 col-md-2">
                         <div class="d-grid gap-2">
-                           <button class="btn btn-primary btn-lg mt-2" data-app-name="${app.name}">Install App</button>
+                           <button class="btn btn-primary btn-lg mt-2" data-app-name="${app.installName}">Install App</button>
                         </div>
                     </div>
                 </div>
