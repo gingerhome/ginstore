@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gingee App Store</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .app-card { cursor: pointer; transition: all 0.2s ease-in-out; }
+        .app-card:hover { transform: translateY(-5px); box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        .gallery-image { cursor: pointer; border: 1px solid #dee2e6; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+        <div class="container py-2 justify-content-start">
+            <img id="storeLogo" src="gingee.png" width="80px"/><a class="navbar-brand" href="#" id="storeName">Gingee App Store</a>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <!-- Main view with the grid of all apps -->
+        <div id="mainView">
+            <section id="featuredApp" class="mb-5"></section>
+            <section id="appList">
+                <h2 class="mb-4">All Apps</h2>
+                <div id="appListGrid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                    <!-- App cards will be injected here by JavaScript -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Detail view for a single app (hidden by default) -->
+        <div id="detailView" class="d-none">
+            <!-- App details will be injected here -->
+        </div>
+    </main>
+
+    <!-- Modal for showing the Install Command -->
+    <div class="modal fade" id="installModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="installModalTitle">Install Command</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Run the following command in your terminal:</p>
+                    <pre><code id="installCommand" class="bg-light p-3 rounded d-block"></code></pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="copyCommandBtn">Copy to Clipboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for viewing gallery images -->
+    <div class="modal fade" id="galleryModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <h5 class="modal-title" id="galleryModalTitle">Screenshot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="galleryModalImage" src="" class="img-fluid" alt="Gallery Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom GStore JavaScript -->
+    <script src="gstore.js"></script>
+</body>
+</html>

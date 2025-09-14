@@ -1,0 +1,62 @@
+{
+  "storeName": "Gingee Store",
+  "storeLogo": "gingee.png",
+  "storeVersion": "1.0.0",
+  "apps": [
+    {
+      "name": "Gindoo",
+      "version": "1.0.0",
+      "featured": true,
+      "category": "Productivity",
+      "description": "A task management tool for software scrum teams built on Gingee.",
+      "long_description": "Gindoo is a task management tool designed specifically for software scrum teams. It offers a Kanban board interface to help teams visualize their workflow, manage tasks, and collaborate effectively. With features like task assignment, due dates, and progress tracking, Gindoo aims to streamline project management and enhance team productivity.",
+      "icon_url": "apps/gindoo/gindoo-logo.png",
+      "website": "https://github.com/gingerhome/gingee-examples",
+      "download_url": "apps/gindoo/gindoo_v1.0.0.gin",
+      "publisher": { "name": "Gingee Project" },
+      "gallery": [
+        { "title": "Kanban View", "image_url": "apps/gindoo/gindoo-kanban-view.png" },
+        { "title": "Task Dashboard", "image_url": "apps/gindoo/gindoo-dashboard-view.png" },
+        { "title": "User Management", "image_url": "apps/gindoo/gindoo-users-view.png" }
+      ]
+    },
+    {
+      "name": "Gintin",
+      "version": "1.0.0",
+      "featured": true,
+      "category": "Communication",
+      "description": "A simple blogging platform built on Gingee.",
+      "long_description": "Gintin is a simple blogging platform built on Gingee. It allows users to create, edit, and share blog posts with ease. With a clean and intuitive interface, Gintin aims to make blogging accessible to everyone.",
+      "icon_url": "apps/gintin/gintin-logo.png",
+      "website": "https://github.com/gingerhome/gingee-examples",
+      "download_url": "apps/gintin/gintin_v1.0.0.gin",
+      "publisher": { "name": "Gingee Project" },
+      "gallery": [
+        { "title": "Home View", "image_url": "apps/gintin/gintin-home.png" },
+        { "title": "Post Management", "image_url": "apps/gintin/gintin-dashboard.png" },
+        { "title": "Comments Management", "image_url": "apps/gintin/gintin-comment-moderation.png" },
+        { "title": "User Management", "image_url": "apps/gintin/gintin-users.png" }
+      ]
+    },
+    {
+      "name": "GinTest",
+      "version": "1.0.0",
+      "featured": false,
+      "category": "Tools",
+      "description": "The test runner for Gingee module APIs",
+      "long_description": "GinTest is a powerful test runner designed for testing Gingee module APIs. It provides a simple interface for executing tests, showcasing code examples and functionality of the modules offered by Gingee.",
+      "icon_url": "apps/gintest/gintest-logo.png",
+      "website": "https://github.com/gingerhome/gingee-examples",
+      "download_url": "apps/gintest/tests_v1.0.0.gin",
+      "publisher": { "name": "Gingee Project" },
+      "gallery": [
+        { "title": "Simple Hello World", "image_url": "apps/gintest/gintest-1.png" },
+        { "title": "Post Multipart Form", "image_url": "apps/gintest/gintest-2.png" },
+        { "title": "Chart Generation", "image_url": "apps/gintest/gintest-3.png" },
+        { "title": "Database Operations", "image_url": "apps/gintest/gintest-4.png" },
+        { "title": "PDF Generation", "image_url": "apps/gintest/gintest-5.png" },
+        { "title": "QR/Barcode Generation", "image_url": "apps/gintest/gintest-6.png" }
+      ]
+    }
+  ]
+}
