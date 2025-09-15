@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p><strong>Version:</strong> ${app.version}</p>
                         ${app.license ? `<p><strong>License:</strong> ${app.license}</p>` : ''}
                         ${app.website ? `<a href="${app.website}" target="_blank" class="btn btn-light border border-1 mt-2 me-2 mb-3">Homepage</a>` : ''}
-                        ${app.download_url ? `<a href="${location.protocol + location.host + '/' + app.download_url}" target="_blank" class="btn btn-light border border-1 mt-2 me-2 mb-3">Download</a>` : ''}
+                        ${app.download_url ? `<a href="${app.download_url}" target="_blank" class="btn btn-light border border-1 mt-2 me-2 mb-3">Download</a>` : ''}
 
                     </div>
                     <div class="col-sm-12 col-md-2">
