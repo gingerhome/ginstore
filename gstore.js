@@ -117,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                         </div>
                         <p>${app.long_description}</p>
+                        <p>${app.instructions ? `<strong>Instructions:</strong> ${app.instructions}` : ''}</p>
                         <p><strong>Version:</strong> ${app.version}</p>
                         ${app.license ? `<p><strong>License:</strong> ${app.license}</p>` : ''}
                         ${app.website ? `<a href="${app.website}" target="_blank" class="btn btn-light border border-1 mt-2 me-2 mb-3">Homepage</a>` : ''}
