@@ -52,6 +52,7 @@
       "category": "Tools",
       "description": "A bug tracking system for software development teams built on Gingee.",
       "long_description": "Ginzilla is a bug tracking system designed for software development teams. It helps teams manage and track bugs effectively, ensuring a smoother development process. With features like issue assignment, status tracking, and reporting, Ginzilla aims to enhance collaboration and productivity.",
+	  "instructions": "Sample Admin User: admin@ginzilla.app, Password: Password123! . Normal User Pwassword: Password123!",
       "icon_url": "apps/ginzilla/ginzilla-logo.png",
       "website": "https://github.com/gingerhome/gingee-examples",
       "download_url": "apps/ginzilla/ginzilla_v1.0.0.gin",
