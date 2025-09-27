@@ -62,7 +62,7 @@
 		{ "title": "Tracker View", "image_url": "apps/ginzilla/3.ginzilla-tracker.png" },
         { "title": "Kanban Board", "image_url": "apps/ginzilla/4.ginzilla-kanban.png" },
 		{ "title": "Calendar View", "image_url": "apps/ginzilla/5.ginzilla-calendar.png" },
-		{ "title": "Admin Panel", "image_url": "apps/ginzilla/6.ginzilla-admin.png" },
+		{ "title": "Admin Panel", "image_url": "apps/ginzilla/6.ginzilla-admin.png" }
       ]
     },
     {
