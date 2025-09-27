@@ -50,7 +50,7 @@
       "installName": "ginzilla",
       "featured": false,
       "category": "Tools",
-      "description": "A bug tracking system for software development teams built on Gingee. Coming Soon!",
+      "description": "A bug tracking system for software development teams built on Gingee.",
       "long_description": "Ginzilla is a bug tracking system designed for software development teams. It helps teams manage and track bugs effectively, ensuring a smoother development process. With features like issue assignment, status tracking, and reporting, Ginzilla aims to enhance collaboration and productivity.",
       "icon_url": "apps/ginzilla/ginzilla-logo.png",
       "website": "https://github.com/gingerhome/gingee-examples",
@@ -58,7 +58,11 @@
       "publisher": { "name": "Gingee Project" },
       "license": "MIT",
       "gallery": [
-        
+        { "title": "Dashboard", "image_url": "apps/ginzilla/2.ginzilla-dashboard.png" },
+		{ "title": "Tracker View", "image_url": "apps/ginzilla/3.ginzilla-tracker.png" },
+        { "title": "Kanban Board", "image_url": "apps/ginzilla/4.ginzilla-kanban.png" },
+		{ "title": "Calendar View", "image_url": "apps/ginzilla/5.ginzilla-calendar.png" },
+		{ "title": "Admin Panel", "image_url": "apps/ginzilla/6.ginzilla-admin.png" },
       ]
     },
     {
